@@ -274,26 +274,29 @@
     text-align: center;
 }
 /* services section end  */
-/* section gallary start */
+/* section gallery start */
 
-.gallary{
+.gallery{
     margin-top: 50px;
 }
-.gallary .card{
+.gallery h1{
+        font-style: bold;
+}
+.gallery .card{
     /* padding: 10%; */
     margin: 10px;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     cursor: pointer;
 }
-.gallary .card img{
+.gallery .card img{
     border-radius: 10px;
     transition: 0.5s ease-in-out;
 }
-.gallary .card img:hover{
+.gallery .card img:hover{
     transform: scale(1.1);
 }
-/* section gallary end */
+/* section gallery end */
 /* about start  */
  
  .about{
@@ -310,9 +313,11 @@
  }
  .about h1{
     text-align: center;
+    font-style: bold;
  }
  .about h1 span{
     color: #ffa500;
+    font-style: bold;
  }
  .about h2{
     font-weight: 600;
@@ -375,4 +380,13 @@
     background: #ffa500;
     transform: scale(1.1);
 }
+#footer a{
+     text-decoration: none;
+     color: black;
+}
+#footer a:hover{
+    text-decoration: underline;
+    color: rgb(68, 106, 163);
+}
+
 /* footer end */
