@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Package</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallary">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+       
+    <!-- navbar end -->
+    <!-- Home Section start  -->
+    <div class="home">
+        <div class="content">
+            <h5>Welcome To World</h5>
+            <h1>Visit <span class="changecontent"></span> </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#book">Book Place</a>
+        </div>
+    </div>
+    <!-- Home Section End  -->
+    <!-- Section book starts -->
+    <section class="book" id="book">
+        <div class="container">
+
+            <div class="main-text">
+                <h1><span>B</span>ook</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                        <img src="https://wallpaperswide.com/download/travel_the_world_3-wallpaper-3840x2160.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <form action="#">
+                        <input type="text" class="form-control" placeholder="Where TO" required><br>
+                        <input type="text" class="form-control" placeholder="How Many" required><br>
+                        <input type="date" class="form-control" placeholder="Arrivals" required><br>
+                        <input type="date" class="form-control" placeholder="Leaving" required><br>
+                        <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea>
+                        <input type="submit" value="Book Now" class="submit" required>
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <!-- Section book end -->
+    <!-- section packages start  -->
+     <section class="packages" id="packages">
+        <div class="container">
+            <div class="main-txt">
+                <h1><span>P</span>ackages</h1>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://wallpapercave.com/wp/wp8999254.jpg" alt="">
+                    <div class="card-body">
+                        <h3>United Kingdome</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$580</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <div class="card-body">
+                        <h3>France</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$510</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+
+                <div class="card">
+                    <img src="https://c1.wallpaperflare.com/preview/219/37/314/mountains-river-landscape-travel-nature-green.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Pakistan</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$350</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+
+                <div class="card">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/296/962/480/spain-europe-view-panorama-wallpaper-preview.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Spain</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$520</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://media.gettyimages.com/id/878629952/video/aerial-statue-of-liberty-and-lower-manhattan-in-sunshine.jpg?s=640x640&k=20&c=uFMEsHJh6JhughfBZkJaQmwBqAJHF-DGAiEn_GvGaII=" alt="">
+                    <div class="card-body">
+                        <h3>Unitade States</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$550</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/768/798/505/townlet-qibaozhen-qibao-minhang-wallpaper-preview.jpg" alt="">
+                    <div class="card-body">
+                        <h3>China</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$480</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkcKfAUYFdMjRNbl8_rAeI2CUw0sYYEuE_sdyRvj6tdZxmrSDVDKi3VsQeUosIQR0qd4&usqp=CAU" alt="">
+                    <div class="card-body">
+                        <h3>Italy</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$500</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://wallpapers.com/images/featured/india-4axuqbnq0u647e8o.jpg" alt="">
+                    <div class="card-body">
+                        <h3>India</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <h6>Price: <strong>$600</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/11/913/315/mosque-istanbul-turkey-sultan-ahmed-mosque-wallpaper-preview.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Turkey</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$545</strong></h6>
+                        <a href="#packages">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://www.shutterstock.com/shutterstock/videos/1093601223/thumb/6.jpg?ip=x480" alt="">
+                    <div class="card-body">
+                        <h3>Mexico</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$535</strong></h6>
+                        <a href="#packages">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/867/809/110/cityscape-cologne-cologne-cathedral-germany-wallpaper-preview.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Germany</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star  "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <h6>Price: <strong>$530</strong></h6>
+                        <a href="#packages">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+     </section>
+    <!-- section packages end  -->
+    <!-- service section start  -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="main-txt">
+                <h1><span>S</span>ervices</h1>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <i class="fas fa-hotel"></i>
+                    <div class="card-body">
+                        <h3>Affordable Hotel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <i class="fas fa-utensils"></i>
+                    <div class="card-body">
+                        <h3>Food & Drinks</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <i class="fas fa-bullhorn"></i>
+                    <div class="card-body">
+                        <h3>Safty Guide</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <i class="fas fa-globe-asia"></i>
+                    <div class="card-body">
+                        <h3>Around The World</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <i class="fas fa-plane"></i>
+                    <div class="card-body">
+                        <h3>Fastest Travels</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <i class="fas fa-hiking"></i>
+                    <div class="card-body">
+                        <h3>Adventures</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section end  -->
+    <!-- section Gallary start  -->
+    <section class="gallary" id="gallary">
+        <div class="container">
+            <div class="main-txt">
+            <h1><span>G</span>allary</h1>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-UlE8tesaEm1ewih0pP5jXIVeXKZj1qEJuQ&usqp=CAU" height="230px" >
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy53ctD6W3Yad1rvdbjzgpbfMNgUE2-c78CA&usqp=CAU" height="230px" >
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7pvzdC2EqDTDGN4QvTlnvURG_ibDVNApcJr6pl_4-uTdesHvBeMY-Nn9rV0C15pW-h8&usqp=CAU" height="230px" >
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="https://c1.wallpaperflare.com/preview/139/644/1013/el-archo-cabo-baja-arch-famous-mexico.jpg" height="230px" >
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="https://w.forfun.com/fetch/f0/f0a64df1de2fda1524bcfef92b3f71d2.jpeg" height="230px" >
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="https://www.shutterstock.com/shutterstock/videos/1103051737/thumb/1.jpg?ip=x480" height="230px" >
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    </section>
+    <!-- section Gallary end  -->
+    <!-- about start -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <h1>About <span>Us</span></h1>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+                <img src="https://media.eventhubs.com/images/2022/06/15-sf6-world-tour-information.webp" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Agency Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolores mollitia. Quos deserunt quod accusantium tenetur possimus suscipit dolorum hic.</p>
+            <button id="about-btn">Read More...</button>
+          </div>
+        </div>
+    </section>
+    <!-- about  end-->
+    <!-- footer start -->
+      <footer id="footer">
+        <h1><span>T</span>ravels</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem rem ipsum corrupti!</p>
+        <div class="social-links">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+        <div class="credit">
+            <p>Designed By <a href="#">Imran</a> </p>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright Imran.All Rights Reserved</p>
+        </div>
+      </footer>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
